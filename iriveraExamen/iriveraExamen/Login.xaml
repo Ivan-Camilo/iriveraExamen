@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="iriveraExamen.Login">
+    <ContentPage.Content>
+
+
+        <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Examen Parcial" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Frame  Padding="10" CornerRadius="0">
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" WidthRequest="150" HeightRequest="150"/>
+        </Frame>
+    
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            
+            <Label x:Name="lblUsuario" Grid.Row="0" Grid.Column="0" Text="Usuario: " VerticalTextAlignment="Center"/>
+            <Entry x:Name="txtUsuario"
+                   Grid.Row="0" Grid.Column="1" 
+                   Placeholder="Usuario" TextColor="White" PlaceholderColor="Gray" BackgroundColor="Transparent" Keyboard="Plain">
+                    <Entry.Behaviors>
+                        
+                    </Entry.Behaviors>
+             </Entry>
+
+            <Label x:Name="lblClave" Grid.Row="1" Grid.Column="0" Text="Contraseña: " VerticalTextAlignment="Center"/>
+            <Entry x:Name="txtClave" 
+                   Grid.Row="1" Grid.Column="1" 
+                   Placeholder="Contraseña" TextColor="Black" PlaceholderColor="Gray" BackgroundColor="Transparent" IsPassword="True">
+ 
+                    <Entry.Behaviors>
+                        
+                    </Entry.Behaviors>
+             </Entry>
+
+            </Grid>
+            </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
+
