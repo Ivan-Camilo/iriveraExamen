@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <StackLayout>
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Calculo de Cuotas" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            <Label Text="Registro de Cuotas" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
 
         <Frame  Padding="10" CornerRadius="0">

@@ -5,53 +5,48 @@
     x:Class="iriveraExamen.Login">
     <ContentPage.Content>
 
-
         <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Examen Parcial" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Examen Parcial" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
 
-        <Frame  Padding="10" CornerRadius="0">
-            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" WidthRequest="150" HeightRequest="150"/>
-        </Frame>
+            <Frame  Padding="10" CornerRadius="0">
+                <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" WidthRequest="150" HeightRequest="150"/>
+            </Frame>
     
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="40"/>
-                <RowDefinition Height="40"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
                 
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Label x:Name="lblUsuario" Grid.Row="0" Grid.Column="0" Text="Usuario: " VerticalTextAlignment="Center"/>
-            <Entry x:Name="txtUsuario"
-                   Grid.Row="0" Grid.Column="1" 
-                   Placeholder="Usuario" TextColor="Gray" PlaceholderColor="Gray" BackgroundColor="Transparent" Keyboard="Plain">
-                    <Entry.Behaviors>
-                        
-                    </Entry.Behaviors>
-             </Entry>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="lblUsuario" Grid.Row="0" Grid.Column="0" Text="Usuario: " VerticalTextAlignment="Center"/>
+                <Entry x:Name="txtUsuario"
+                       Grid.Row="0" Grid.Column="1" 
+                       Placeholder="Usuario" TextColor="Gray" PlaceholderColor="Gray" BackgroundColor="Transparent" Keyboard="Plain">
+                 </Entry>
 
-            <Label x:Name="lblClave" Grid.Row="1" Grid.Column="0" Text="Contraseña: " VerticalTextAlignment="Center"/>
-            <Entry x:Name="txtClave" 
-                   Grid.Row="1" Grid.Column="1" 
-                   Placeholder="Contraseña" TextColor="Gray" PlaceholderColor="Gray" BackgroundColor="Transparent" IsPassword="True">
-             </Entry>
+                <Label x:Name="lblClave" Grid.Row="1" Grid.Column="0" Text="Contraseña: " VerticalTextAlignment="Center"/>
+                <Entry x:Name="txtClave" 
+                       Grid.Row="1" Grid.Column="1" 
+                       Placeholder="Contraseña" TextColor="Gray" PlaceholderColor="Gray" BackgroundColor="Transparent" IsPassword="True">
+                 </Entry>
 
-            </Grid>
-            <Button x:Name="LoginButton"
+             </Grid>
+             <Button x:Name="LoginButton"
                 VerticalOptions="Center"
                 Text="Login"
-                TextColor="Gray"
-                BackgroundColor="Transparent"
+                TextColor="White"
+                BackgroundColor="#2196F3"
                 BorderColor="#2196F3"
                 BorderWidth="1"
                 CornerRadius="20"
                 Clicked="LoginButton_Clicked"/>
-
-            </StackLayout>
+         </StackLayout>
 
     </ContentPage.Content>
 </ContentPage>

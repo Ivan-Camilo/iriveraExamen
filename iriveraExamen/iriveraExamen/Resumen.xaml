@@ -22,7 +22,7 @@
            
                     </Grid.ColumnDefinitions>
                 
-                <Label x:Name="lblBienvenido" Grid.Row="0" Grid.Column="0" Text = "Bienvenido" HorizontalTextAlignment="End" TextColor="Black" FontSize="15"/>
+                <Label x:Name="lblBienvenido" Grid.Row="0" Grid.Column="0" Text = "Usuario Conectado" HorizontalTextAlignment="End" TextColor="Black" FontSize="15"/>
                 <Label x:Name="lblusuario" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="End" TextColor="Black" FontSize="15"/>
 
               </Grid>

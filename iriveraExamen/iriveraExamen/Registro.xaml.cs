@@ -18,10 +18,18 @@ namespace iriveraExamen
 
         void Calcular_Clicked(System.Object sender, System.EventArgs e)
         {
-            var MontoInicial = double.Parse(txtMontoInicial.Text);
-            var Saldo = 3000 - MontoInicial;
-            var Cuota = (Saldo / 3) + (3000 * 5 / 100);
-            
+            double MontoInicial = double.Parse(txtMontoInicial.Text);
+            double Cuota;
+            if (MontoInicial == 3000)
+            {
+                Cuota = 0;
+            }
+            else
+            {
+                var Saldo = 3000 - MontoInicial;
+                Cuota = (Saldo / 3) + (3000 * 5 / 100);
+            }
+
             lblCuota1.Text = Cuota.ToString("N2");
             lblCuota2.Text = Cuota.ToString("N2");
             lblCuota3.Text = Cuota.ToString("N2");
@@ -33,9 +41,17 @@ namespace iriveraExamen
             DisplayAlert("Informacion", "\nElemento Guardado con Exito", "OK");
             string usuario = lblusuario.Text;
             string ordenante = txtOrdenante.Text;
-            var MontoInicial = double.Parse(txtMontoInicial.Text);
-            var Saldo = 3000 - MontoInicial;
-            var Cuota = (Saldo / 3) + (3000 * 5 / 100);
+            double MontoInicial = double.Parse(txtMontoInicial.Text);
+            double Cuota;
+            if (MontoInicial == 3000)
+            {
+                Cuota = 0;
+            }
+            else
+            {
+                var Saldo = 3000 - MontoInicial;
+                Cuota = (Saldo / 3) + (3000 * 5 / 100);
+            }
             Navigation.PushAsync(new Resumen(usuario, ordenante, MontoInicial, Cuota));
         }
     }
