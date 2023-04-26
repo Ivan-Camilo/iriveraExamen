@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:behaviours="clr-namespace:iriveraExamen"
+    x:Class="iriveraExamen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Calculo de Cuotas" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Frame  Padding="10" CornerRadius="0">
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="250"/>
+                        <ColumnDefinition />
+           
+                    </Grid.ColumnDefinitions>
+                
+                <Label x:Name="lblBienvenido" Grid.Row="0" Grid.Column="0" Text = "Usuario Conectado:" HorizontalTextAlignment="End" TextColor="Black" FontSize="15"/>
+                <Label x:Name="lblusuario" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="End" TextColor="Black" FontSize="15"/>
+
+              </Grid>
+            </StackLayout>
+             
+        </Frame>
+       
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lblOrdenante" Grid.Row="0" Grid.Column="0" Text="Ordenante: " VerticalTextAlignment="Center"/>
+            <Entry x:Name="txtOrdenante"
+                   Grid.Row="0" Grid.Column="1" Placeholder="Ingrese Nombre"
+                   FontSize="15">
+             </Entry>
+
+            <Label x:Name="lblMontoInicial" Grid.Row="1" Grid.Column="0" Text="Monto Inicial: " VerticalTextAlignment="Center"/>
+            <Entry x:Name="txtMontoInicial" 
+                   Grid.Row="1" Grid.Column="1" Placeholder="Ingrese Monto Inicial"
+                   FontSize="15" Keyboard="Numeric">
+                    <Entry.Behaviors>
+                       <behaviours:MaximumAmountEntryBehavior MaximumAmount="3000" />
+                    </Entry.Behaviors>
+             </Entry>
+ 
+            <Label x:Name="lblC1" Grid.Row="2" Grid.Column="0" Text="Cuota 1: " VerticalTextAlignment="Center"/>
+            <Label x:Name="lblCuota1" Grid.Row="2" Grid.Column="1" VerticalTextAlignment="Center"/>
+
+            <Label x:Name="lblC2" Grid.Row="3" Grid.Column="0" Text="Cuota 2: " VerticalTextAlignment="Center"/>
+            <Label x:Name="lblCuota2" Grid.Row="3" Grid.Column="1" VerticalTextAlignment="Center"/>
+
+            <Label x:Name="lblC3" Grid.Row="4" Grid.Column="0" Text="Cuota 3: " VerticalTextAlignment="Center"/>
+            <Label x:Name="lblCuota3" Grid.Row="4" Grid.Column="1" VerticalTextAlignment="Center"/>
+
+            <Button x:Name="Calcular" Grid.Row="5" Grid.Column="0" Text="Calcular" Clicked="Calcular_Clicked" />
+            <Button x:Name="Guardar" Grid.Row="5" Grid.Column="1" Text="Guardar" Clicked="Guardar_Clicked"/>
+
+        </Grid>
+
+    </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
+

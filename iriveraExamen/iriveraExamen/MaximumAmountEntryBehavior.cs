@@ -3,9 +3,9 @@ using Xamarin.Forms;
 
 namespace iriveraExamen
 {
-	public class MaximumAmountEntryBehavior
+	public class MaximumAmountEntryBehavior : PlainNumericEntryBehavior
 	{
-        public int MaximumAmount { get; set; } = 10;
+        public int MaximumAmount { get; set; } = 3000;
 
         public MaximumAmountEntryBehavior()
         {

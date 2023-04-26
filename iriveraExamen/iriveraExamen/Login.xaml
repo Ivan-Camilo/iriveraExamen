@@ -19,23 +19,16 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="40"/>
                 <RowDefinition Height="40"/>
-                <RowDefinition Height="40"/>
-                <RowDefinition Height="40"/>
-                <RowDefinition Height="40"/>
-                <RowDefinition Height="40"/>
-                <RowDefinition Height="40"/>
-                <RowDefinition Height="40"/>
+                
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-
-            
             <Label x:Name="lblUsuario" Grid.Row="0" Grid.Column="0" Text="Usuario: " VerticalTextAlignment="Center"/>
             <Entry x:Name="txtUsuario"
                    Grid.Row="0" Grid.Column="1" 
-                   Placeholder="Usuario" TextColor="White" PlaceholderColor="Gray" BackgroundColor="Transparent" Keyboard="Plain">
+                   Placeholder="Usuario" TextColor="Gray" PlaceholderColor="Gray" BackgroundColor="Transparent" Keyboard="Plain">
                     <Entry.Behaviors>
                         
                     </Entry.Behaviors>
@@ -44,14 +37,20 @@
             <Label x:Name="lblClave" Grid.Row="1" Grid.Column="0" Text="Contraseña: " VerticalTextAlignment="Center"/>
             <Entry x:Name="txtClave" 
                    Grid.Row="1" Grid.Column="1" 
-                   Placeholder="Contraseña" TextColor="Black" PlaceholderColor="Gray" BackgroundColor="Transparent" IsPassword="True">
- 
-                    <Entry.Behaviors>
-                        
-                    </Entry.Behaviors>
+                   Placeholder="Contraseña" TextColor="Gray" PlaceholderColor="Gray" BackgroundColor="Transparent" IsPassword="True">
              </Entry>
 
             </Grid>
+            <Button x:Name="LoginButton"
+                VerticalOptions="Center"
+                Text="Login"
+                TextColor="Gray"
+                BackgroundColor="Transparent"
+                BorderColor="#2196F3"
+                BorderWidth="1"
+                CornerRadius="20"
+                Clicked="LoginButton_Clicked"/>
+
             </StackLayout>
 
     </ContentPage.Content>
